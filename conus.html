@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample site for plots sale</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <p>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                20percent opening Bonus + 25% OFF
+                <a href="https://wa.me/000000000000" target="_blank"> 
+                CLAIM 
+            </a>
+            </p>
+        </nav>
+        <nav class="logo">
+           <img src="img/logo.png" alt="" width="90">&nbsp;  
+           <img src="img/logo2.png"alt="" width="90">&nbsp;  
+           <a href="index.html">Home</a>
+           <a href="oursp.html">OURSPECALITY</a>
+           <a href="conus.html">CONTACT US</a>
+         </nav>
+         <section class="f-data">
+            <form action="" data-aos="fade-up">
+                Enter Your Email Id
+               <input type="email" name="" id="email" placeholder="Enter Email" required> 
+                Assignment Deadline time
+                <input type="text" name="" id="time" placeholder="Deadline">
+                Mobile no.
+                <input type="text" name="" id="number" placeholder="Mobile" required>
+                Add Assignment Description
+                <textarea name="" id="dis" cols="20" rows="3" placeholder="Write assignment description"></textarea>
+                <input type="submit" id="submit" value="Free Assistance" onclick=" gotowhatsapp()">
+            </form>
+        </section>
+    </header>
+
+
+
+
+
+
+         <footer>
+            <div data-aos="zoom-in">
+                <p>Get in Touch</p>
+                <i class="fa fa-facebook"></i>
+                <a href="https://wa.me/00000000000" target="_blank"> 
+                <i class="fa fa-whatsapp"></i>
+                </a>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            
+            
+                <div style=" text-align:center; display:inline-block">
+                    <a href="tel:+91 000000000000">
+                        
+                        <img src="img/flogo.png" alt="" width="50">
+                        &nbsp;&nbsp;&nbsp;
+                    +91 - 0000000000 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                </div>
+            <div class="email">
+                <p>Connect with us!!</p>
+                <span>E-mail:
+                    <a href="mailto:sample@gmail.com">
+                   sample@gmail.com
+                </a>
+    
+    
+                </span>
+                <span><br>
+                    <a href="tel:+910000000000">
+                    Call us on: +000000000000
+                    </a>
+                </span><br>
+              
+        </footer>
+    
+        <section class="f-2" >
+            <div>
+                <p style="text-align: center;  padding: 10px;">Copyright © 2024 . All rights reserved</p>
+        </div>
+        </section> 
+        <a href="https://wa.me/00000000000" target="_blank"> 
+        <section class="chat">
+        
+        <i class="fa fa-commenting" aria-hidden="true"></i> Chat now  <i class="fa fa-whatsapp"></i>
+            
+    </section>
+    </a>
+    <a href="tel:+91 000000000">
+    <i class="fa fa-phone" id="call"></i>
+    </a>
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        
+      </script>
+      <script>
+        function gotowhatsapp() {
+            
+            var email = document.getElementById("email").value;
+            var time = document.getElementById("time").value;
+            var number = document.getElementById("number").value;
+            var dis = document.getElementById("dis").value;
+        
+            var url = "https://wa.me/0000000000?text=Hi%20There!!" 
+            + "Email: " + email + "%0a"
+            + "Deadline: " + time + "%0a"
+            + "Number: " + number  + "%0a"
+            + "Assignment Description: " + dis; 
+        
+            window.open(url, '_blank').focus();
+        }
+        </script>
+        
+    </body>
+    </html>
